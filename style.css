@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.custom-nav {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.custom-nav.scrolled {
+    background-color: #0C1F3D;
+}
+
+.custom-nav a {
+    color: #fff !important;
+}
+
+.container-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.container-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(12, 31, 61, 0.6);
+    width: 100%;
+    height: 100vh;
+}
+
+.text-inf {
+    color: #fff;
+}
+
+.circle {
+    background-color: #027849;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.inf {
+    text-align: justify;
+}
+
+.ico {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.icon-list::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #0C1F3D;
+}
+
+.about {
+    color: white;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #027849;
+}
+
+a:hover {
+    color: #0C1F3D;
+}
+
+.fas {
+    font-size: 20px;
+    color: #fff;
+}
+
+.circle-user {
+    background-color: #0C1F3D;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ico-user {
+    margin-right: 20px;
+}
+
+.about-user {
+    display: block;
+}
+
+.btn-up {
+    background-color: #E0E0E0;
+    width: 100%;
+    height: 100px;
+    border: none;
+    font-size: 18px;
+    color: #333333;
+}
+
+.sub-titles {
+    border-bottom: 1px solid #333333;
+    width: 200px;
+    text-align: center;
+}
+
+.map {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.map .tooltip {
+    visibility: hidden;
+    width: auto;
+    background-color: #027849;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.map .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.map:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
