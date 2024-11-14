@@ -2,6 +2,9 @@
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 .custom-nav {
@@ -258,3 +261,23 @@ a:hover {
     position: relative;
     z-index: 1;
 }
+
+.footer {
+    color: #fff;
+    height: 3rem;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(12, 31, 61, 0.7);;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #027849;
+    border-radius: 5px;
+    border: none;
+}
+
