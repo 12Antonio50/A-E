@@ -21,6 +21,7 @@ body {
 
 .custom-nav a {
     color: #fff !important;
+    font-size: 18px;
 }
 
 .container-img-wrapper {
@@ -100,10 +101,25 @@ a:hover {
     color: #0C1F3D;
 }
 
-.fas {
+.icon-user {
     font-size: 20px;
     color: #fff;
 }
+
+.icon-footer,
+.icon-footer-web {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.icon-footer {
+    color: #027849;
+}
+
+.icon-footer-web {
+    color: #1154bc;
+}
+
 
 .circle-user {
     background-color: #0C1F3D;
@@ -133,7 +149,7 @@ a:hover {
 }
 
 .sub-titles {
-    border-bottom: 1px solid #333333;
+    border-bottom: 2px solid #333333;
     width: 200px;
     text-align: center;
 }
@@ -170,10 +186,75 @@ a:hover {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #333 transparent transparent transparent;
+    border-color: #027849 transparent transparent transparent;
 }
 
 .map:hover .tooltip {
     visibility: visible;
     opacity: 1;
+}
+
+.container-phone,
+.container-web{
+    position: relative;
+    height: 40px;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.container-phone {
+    color: #027849;
+}
+
+.container-web {
+    color: #1154bc;
+}
+
+.container-phone::before,
+.container-web::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background-color: #027849;
+    transition: width 0.5s ease;
+    z-index: 0;
+}
+
+.container-phone::before {
+    background-color: #027849;
+}
+
+.container-web::before {
+    background-color: #1154bc;
+}
+
+.container-phone:hover i,
+.container-phone:hover span,
+.container-web:hover i,
+.container-web:hover span {
+    color: #fff;
+}
+
+.container-phone:hover::before,
+.container-web:hover::before {
+    width: 100%;
+}
+
+.container-phone i,
+.container-phone span,
+.container-web i,
+.container-web span {
+    position: relative;
+    z-index: 1;
 }
