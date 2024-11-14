@@ -22,6 +22,6 @@ btnScroll.onclick = function () {
 window.onload = function () {
     const textInfo = document.getElementById("text-inf").style.opacity = "1";
     if (textInfo === "1") {
-        document.getElementById("p-inf").style.opacity = "1";
+        document.getElementById("p-inf");
     }
 };
