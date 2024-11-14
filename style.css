@@ -57,7 +57,14 @@ body {
 }
 
 .text-inf {
+    opacity: 0;
     color: #fff;
+    animation: fadeIn 5s ease forwards;
+}
+
+.p-inf {
+    opacity: 0;
+    animation: fadeIn 6s ease forwards;
 }
 
 .circle {
@@ -281,3 +288,11 @@ body::-webkit-scrollbar-thumb {
     border: none;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
