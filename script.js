@@ -10,3 +10,11 @@ function cambiarNavBackground() {
         navbar.classList.remove("scrolled");
     }
 }
+
+//Botón Scroll 
+
+const btnScroll = document.getElementById("btn-scroll");
+
+btnScroll.onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth' });
+};
