@@ -313,6 +313,11 @@ body::-webkit-scrollbar-thumb {
     transform: scale(1.05);
 }
 
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
