@@ -24,4 +24,4 @@ window.onload = function () {
     if (textInfo === "1") {
         document.getElementById("p-inf");
     }
-};
+};  
