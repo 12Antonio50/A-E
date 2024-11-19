@@ -73,10 +73,12 @@ body {
     opacity: 0;
     color: #fff;
     animation: fadeIn 5s ease forwards;
+    font-size: 16px;
 }
 
 .p-inf {
     opacity: 0;
+    font-size: 16px;
     animation: fadeIn 6s ease forwards;
 }
 
@@ -87,8 +89,11 @@ body {
     height: 40px;
 }
 
-.inf {
+.inf,
+.card-text {
     text-align: justify;
+    font-size: 16px;
+    color: #333;
 }
 
 .ico {
@@ -113,11 +118,13 @@ ul {
 .about {
     color: white;
     text-align: justify;
+    font-size: 16px;
 }
 
 a {
     text-decoration: none;
     color: #027849;
+    font-size: 16px;
 }
 
 a:hover {
@@ -170,7 +177,6 @@ a:hover {
 .list-about {
     font-size: 16px;
     color: #333;
-    /* Color inicial del texto */
     position: relative;
     overflow: hidden;
     transition: color 0.5s ease;
@@ -361,6 +367,7 @@ body::-webkit-scrollbar-thumb {
     padding: 20px;
     position: relative;
     height: 10rem;
+
 }
 
 .contaner-first-about::before {
@@ -381,6 +388,21 @@ body::-webkit-scrollbar-thumb {
 .header-content {
     position: relative;
     z-index: 2;
+}
+
+.card-header {
+    height: 5rem;
+    background-color: #027849;
+}
+
+.btn-card {
+    background-color: #027849;
+    color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    font-size: 16px;
 }
 
 @keyframes fadeIn {
