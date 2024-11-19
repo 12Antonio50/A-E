@@ -14,7 +14,8 @@ body {
     line-height: 1.6;
 }
 
-.custom-nav {
+.custom-nav,
+.custom-nav-about {
     z-index: 999;
     position: fixed;
     top: 0;
@@ -25,11 +26,16 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.custom-nav-about {
+    background-color: #0C1F3D;
+}
+
 .custom-nav.scrolled {
     background-color: #0C1F3D;
 }
 
-.custom-nav a {
+.custom-nav a,
+.custom-nav-about a {
     color: #fff !important;
     font-size: 18px;
 }
@@ -163,7 +169,8 @@ a:hover {
 /*Poner lo mismo para todo el texto*/
 .list-about {
     font-size: 16px;
-    color: #333; /* Color inicial del texto */
+    color: #333;
+    /* Color inicial del texto */
     position: relative;
     overflow: hidden;
     transition: color 0.5s ease;
@@ -347,6 +354,34 @@ body::-webkit-scrollbar-thumb {
     filter: invert(1);
 }
 
+.contaner-first-about {
+    background-color: #c2c2c2;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    height: 10rem;
+}
+
+.contaner-first-about::before {
+    content: "";
+    background: url('./img/home.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
 
 @keyframes fadeIn {
     from {
