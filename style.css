@@ -157,7 +157,7 @@ a:hover {
 .circle-ico {
     margin-top: 2px;
     position: relative;
-    transition: all 0.5s ease; /* Transición suave */
+    transition: all 0.5s ease;
 }
 
 /*Poner lo mismo para todo el texto*/
@@ -167,11 +167,12 @@ a:hover {
     position: relative;
     overflow: hidden;
     transition: color 0.5s ease;
+    text-align: justify;
 }
 
 .container-about:hover .circle-ico {
-    width: 80px; /* Se estira horizontalmente */
-    border-radius: 25px; /* Mantiene esquinas redondeadas */
+    width: 80px;
+    border-radius: 25px;
 }
 
 .about-user {
