@@ -32,3 +32,7 @@ function openModal() {
         myInput.focus()
     })
 }
+
+document.getElementById("seccionAbout").addEventListener("click", function() {
+    window.location.href = "index.html#seccionAbout";
+});

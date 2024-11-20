@@ -391,7 +391,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-header {
-    height: 5rem;
+    height: 4rem;
     background-color: #027849;
 }
 
@@ -403,6 +403,17 @@ body::-webkit-scrollbar-thumb {
     border: none;
     height: 40px;
     font-size: 16px;
+}
+
+.circle-card {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #027849;
+    border-radius: 50%;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @keyframes fadeIn {

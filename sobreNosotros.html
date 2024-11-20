@@ -26,13 +26,16 @@
                 <div class="custom-nav-items collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACTO</a>
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sectionContact">CONTACTO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sobreNosotros.html">NUESTROS SERVICIOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SOBRE NOSOTROS</a>
+                            <a class="nav-link" href="index.html#sectionAbout">SOBRE NOSOTROS</a>
                         </li>
                     </ul>
                 </div>
@@ -190,43 +193,50 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="card h-100">
-                                <div class="card-header">
-
-                                </div>
+                            <div class="card h-100 position-relative">
+                                <div class="card-header bg-success"></div>
+                                <div class="circle-card position-absolute"></div>
                                 <div class="card-body">
                                     <div class="card-text">
                                         Expertos que asesoran a los clientes con el objeto de obtener las mejores
                                         alternativas
                                         dentro de un marco que permite la legislación fiscal y la ética profesional.
-                                        (Planteamiento
-                                        y aplicación de una operación determinada conforme a la Ley).
+                                        (Planteamiento y aplicación de una operación determinada conforme a la Ley).
                                     </div>
+                                </div>
+                                <div class="card-footer mt-auto">
+                                    <button class="btn btn-success w-100" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#cardModal">
+                                        Agendar cita
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <div class="card-header">
 
-                                </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 position-relative">
+                                <div class="card-header bg-success"></div>
+                                <div class="circle-card position-absolute"></div>
                                 <div class="card-body">
-                                    <div class="card-text my-3">
+                                    <div class="card-text">
                                         Se realizan estudios específicos para determinar dentro de las posibilidades
                                         legales, una carga tributada que sea favorable, corno la plantación de una nueva
                                         empresa adquisición o enajenación de empresas, fusión, escisiones, asociación de
                                         negocios, empresas integradoras al 100 %, etc.
                                     </div>
+                                </div>
+                                <div class="card-footer mt-auto">
                                     <button class="btn-card" type="button" data-bs-toggle="modal"
-                                        data-bs-target="#cardModal">Agendar cita</button>
+                                        data-bs-target="#cardModal">
+                                        Agendar cita
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100">
-                                <div class="card-header">
-
-                                </div>
+                            <div class="card h-100 position-relative">
+                                <div class="card-header bg-success"></div>
+                                <div class="circle-card position-absolute"></div>
                                 <div class="card-body">
                                     <div class="card-text">
                                         Representarnos al cliente ante autoridades hacendarías en promociones para
@@ -234,58 +244,104 @@
                                         resoluciones especificas.
                                     </div>
                                 </div>
+                                <div class="card-footer mt-auto">
+                                    <button class="btn-card" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#cardModal">
+                                        Agendar cita
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4 my-5">
-                            <div class="card h-100">
+                            <div class="card h-100 d-flex flex-column">
                                 <div class="card-header"></div>
-                                <div class="card-body">
+                                <div class="card-body flex-grow-1">
                                     <div class="card-text">
                                         Preparamos y revisarnos declaraciones de impuestos.
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-5">
-                            <div class="card h-100">
-                                <div class="card-header"></div>
-                                <div class="card-body">
-                                    <div class="card-text">
-                                        Asesoría en el ámbito personal (optimizar las opciones previstas en la Ley).
-                                    </div>
+                                <div class="card-footer mt-auto">
+                                    <button class="btn-card" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#cardModal">
+                                        Agendar cita
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 my-5">
-                            <div class="card h-100">
+                            <div class="card h-100 d-flex flex-column">
                                 <div class="card-header"></div>
-                                <div class="card-body">
+                                <div class="card-body flex-grow-1">
+                                    <div class="card-text">
+                                        Asesoría en el ámbito personal (optimizar las opciones previstas en la Ley).
+                                    </div>
+                                </div>
+                                <div class="card-footer mt-auto">
+                                    <button class="btn-card" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#cardModal">
+                                        Agendar cita
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-5">
+                            <div class="card h-100 d-flex flex-column">
+                                <div class="card-header"></div>
+                                <div class="card-body flex-grow-1">
                                     <div class="card-text">
                                         Colaboración con los auditores en el análisis de las consecuencias fiscales
                                         por los
                                         registros de las operaciones del cliente.
                                     </div>
                                 </div>
+                                <div class="card-footer mt-auto">
+                                    <button class="btn-card" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#cardModal">
+                                        Agendar cita
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100">
+                            <div class="card h-100 d-flex flex-column">
                                 <div class="card-header"></div>
-                                <div class="card-body">
+                                <div class="card-body flex-grow-1">
                                     <div class="card-text">
                                         Colaboración con los representantes legales del cliente, en caso de litigios
                                         ante los
                                         tribunales fiscales.
                                     </div>
                                 </div>
+                                <div class="card-footer mt-auto">
+                                    <button class="btn-card" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#cardModal">
+                                        Agendar cita
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100">
+                            <div class="card h-100 d-flex flex-column">
                                 <div class="card-header"></div>
-                                <div class="card-body">
+                                <div class="card-body flex-grow-1">
                                     <div class="card-tetx">
                                         Información continúa sobre modificaciones en las leyes fiscales.
+                                    </div>
+                                </div>
+                                <div class="card-footer mt-auto">
+                                    <button class="btn-card" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#cardModal">
+                                        Agendar cita
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 d-flex flex-column">
+                                <div class="card-header"></div>
+                                <div class="card-body flex-grow-1">
+                                    <div class="card-tetx">
+                                        Nuestros programas de trabajo se dividen de la siguiente forma.
                                     </div>
                                 </div>
                             </div>
@@ -293,7 +349,7 @@
                     </div>
                     <ul>
                         <li>
-                            Nuestros programas de trabajo se dividen de la siguiente forma.
+
                         </li>
                     </ul>
                     </p>
@@ -657,7 +713,7 @@
         </button>
         <br>
         <br>
-        <div class="container-fluid">
+        <div class="container-fluid" id="sectionContact">
             <div class="row">
                 <div class="col-md-4 h-100 d-flex flex-column justify-content-center align-items-center text-center">
                     <div class="sub-titles">
