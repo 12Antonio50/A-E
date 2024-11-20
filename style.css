@@ -327,7 +327,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #027849;
+    background-color: #0C1F3D;
     border-radius: 5px;
     border: none;
 }
@@ -391,7 +391,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-header {
-    height: 4rem;
+    height: 3rem;
     background-color: #027849;
 }
 
@@ -411,9 +411,39 @@ body::-webkit-scrollbar-thumb {
     background-color: white;
     border: 2px solid #027849;
     border-radius: 50%;
-    top: 35px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.ico-card {
+    font-size: 20px;
+    color: #027849;
+}
+
+.card-footer {
+    background: #fff;
+    border-top: none;
+}
+
+.card:hover .card-header {
+    background: #0C1F3D;
+}
+
+.card:hover .circle-card {
+    border: 2px solid #0C1F3D;
+}
+
+.card:hover .ico-card {
+    color: #0C1F3D;
+}
+
+.card:hover .btn-card {
+    background: #0C1F3D;
+}
+
+b {
+    color: #0C1F3D;
 }
 
 @keyframes fadeIn {
