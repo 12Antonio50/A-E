@@ -134,11 +134,7 @@ a:hover {
 .icon-user,
 .icon-about {
     font-size: 20px;
-    color: #fff;
-}
-
-.container-about {
-    gap: 15px;
+    color: #0C1F3D;
 }
 
 .icon-footer,
@@ -156,8 +152,7 @@ a:hover {
 }
 
 
-.circle-user,
-.circle-ico {
+.circle-user {
     background-color: #0C1F3D;
     border-radius: 50%;
     width: 40px;
@@ -167,14 +162,9 @@ a:hover {
     align-items: center;
 }
 
-.circle-ico {
-    margin-top: 2px;
-    position: relative;
-    transition: all 0.5s ease;
-}
-
 /*Poner lo mismo para todo el texto*/
-.list-about {
+.list-about, 
+.about-carousel {
     font-size: 16px;
     color: #333;
     position: relative;
@@ -183,9 +173,8 @@ a:hover {
     text-align: justify;
 }
 
-.container-about:hover .circle-ico {
-    width: 80px;
-    border-radius: 25px;
+.about-carousel {
+    color: #fff;
 }
 
 .about-user {
@@ -367,7 +356,6 @@ body::-webkit-scrollbar-thumb {
     padding: 20px;
     position: relative;
     height: 10rem;
-
 }
 
 .contaner-first-about::before {
@@ -391,7 +379,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-header {
-    height: 3rem;
+    height: 2rem;
     background-color: #027849;
 }
 
@@ -411,7 +399,7 @@ body::-webkit-scrollbar-thumb {
     background-color: white;
     border: 2px solid #027849;
     border-radius: 50%;
-    top: 20px;
+    top: 2px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -444,6 +432,23 @@ body::-webkit-scrollbar-thumb {
 
 b {
     color: #0C1F3D;
+}
+
+.card-carousel {
+    /*background: linear-gradient(135deg, #1E3B66, #0C1F3D, #08142C, #1E3B66);*/
+    background: #0C1F3D;
+    border: none;
+    height: 20rem;
+}
+
+.circle-ico {
+    border-radius: 50%;
+    background: #fff;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes fadeIn {
