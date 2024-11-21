@@ -134,6 +134,10 @@ a:hover {
 .icon-user,
 .icon-about {
     font-size: 20px;
+    color: #fff;
+}
+
+.icon-about {
     color: #0C1F3D;
 }
 
@@ -150,7 +154,6 @@ a:hover {
 .icon-footer-web {
     color: #1154bc;
 }
-
 
 .circle-user {
     background-color: #0C1F3D;
@@ -449,6 +452,10 @@ b {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card-about {
+    background-color: #0C1F3D;
 }
 
 @keyframes fadeIn {
