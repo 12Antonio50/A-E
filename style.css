@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-.texto-nuevo {
-    font-family: 'Lora', serif;
-    font-weight: 700;
-    color: #0C1F3D;
-}
-
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    
 }
 
 .custom-nav {
@@ -25,12 +20,14 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.custom-nav-about{
+.custom-nav-about {
     z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
     padding: 10px 0;
+    background-color: #0C1F3D;
+    transition: top 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
 
 .custom-nav-about {
@@ -39,6 +36,7 @@ body {
 
 .custom-nav-about.scrolled {
     position: fixed;
+    top: 0;
 }
 
 .custom-nav.scrolled {
@@ -177,7 +175,7 @@ a:hover {
 }
 
 /*Poner lo mismo para todo el texto*/
-.list-about, 
+.list-about,
 .about-carousel {
     font-size: 16px;
     color: #333;
@@ -490,7 +488,7 @@ b {
 .dropdown-item {
     font-size: 0.95rem;
     font-weight: 500;
-    color: #333;
+    color: #027849;
     border-radius: 5px;
     padding: 10px 15px;
     transition: all 0.3s ease;
@@ -507,6 +505,68 @@ b {
 .dropdown-menu li:last-child {
     margin-bottom: 0;
 }
+
+.custom-modal {
+    background: #fff;
+    position: relative;
+    color: #0C1F3D;
+    border: none;
+    overflow: hidden;
+}
+
+.custom-modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #0C1F3D;
+    z-index: 1;
+}
+
+.custom-modal::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 200px 220px 220px;
+    border-color: transparent #027849 transparent transparent;
+    z-index: 1;
+}
+
+.modal-body p.lead {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #0C1F3D;
+    position: relative;
+    z-index: 2;
+}
+
+.modal-body a {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #0C1F3D;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.contact-link i {
+    color: #0C1F3D;
+    /* Color del ícono */
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
 
 @keyframes fadeIn {
     from {
