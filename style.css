@@ -369,7 +369,7 @@ body::-webkit-scrollbar-thumb {
     text-align: left;
     padding: 20px;
     position: relative;
-    height: 10rem;
+    height: 50vh;
 }
 
 .contaner-first-about::before {
