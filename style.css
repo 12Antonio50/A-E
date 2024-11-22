@@ -497,9 +497,6 @@ b {
     margin-bottom: 0;
 }
 
-.control-carousel {
-    visibility: hidden;
-}
 
 @keyframes fadeIn {
     from {
