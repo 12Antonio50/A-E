@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener('scroll', cambiarNavBackground);
 
+
+
     const btnScroll = document.getElementById("btn-scroll");
     if (btnScroll) {
         btnScroll.onclick = function () {
@@ -41,3 +43,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navbar = document.querySelector('.custom-nav');
+    const navbarCollapse = document.getElementById('navbarText');
+
+    navbarCollapse.addEventListener('shown.bs.collapse', function () {
+        navbar.classList.add("scrolled");
+    });
+
+    navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+        navbar.classList.remove("scrolled");
+        console.log("El menú se ha cerrado");
+    });
+});
+

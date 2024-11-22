@@ -575,3 +575,10 @@ b {
     }
 }
 
+
+
+.navbar-collapse.show {
+    height: auto; /* Expande el contenedor */
+}
+
+
