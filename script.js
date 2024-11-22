@@ -3,7 +3,7 @@ function cambiarNavBackground() {
     const navbars = document.querySelectorAll('.custom-nav, .custom-nav-about');
 
     navbars.forEach(navbar => {
-        if (window.scrollY > 1) {
+        if (window.scrollY > 15) {
             navbar.classList.add("scrolled");
         } else {
             navbar.classList.remove("scrolled");
