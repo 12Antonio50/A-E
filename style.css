@@ -14,20 +14,31 @@ body {
     line-height: 1.6;
 }
 
-.custom-nav,
-.custom-nav-about {
+.custom-nav {
     z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1px 0;
+    padding: 10px 0;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
 }
 
+.custom-nav-about{
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
 .custom-nav-about {
     background-color: #0C1F3D;
+}
+
+.custom-nav-about.scrolled {
+    position: fixed;
 }
 
 .custom-nav.scrolled {
@@ -496,7 +507,6 @@ b {
 .dropdown-menu li:last-child {
     margin-bottom: 0;
 }
-
 
 @keyframes fadeIn {
     from {

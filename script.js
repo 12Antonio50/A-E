@@ -1,15 +1,18 @@
-window.onscroll = function () {
-    cambiarNavBackground();
-};
 
 function cambiarNavBackground() {
-    const navbar = document.querySelector('.custom-nav');
-    if (window.scrollY > 10) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
+    const navbars = document.querySelectorAll('.custom-nav, .custom-nav-about');
+
+    navbars.forEach(navbar => {
+        if (window.scrollY > 1) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
 }
+
+window.addEventListener('scroll', cambiarNavBackground);
+
 
 const btnScroll = document.getElementById("btn-scroll");
 
@@ -33,6 +36,6 @@ function openModal() {
     })
 }
 
-document.getElementById("seccionAbout").addEventListener("click", function() {
+document.getElementById("seccionAbout").addEventListener("click", function () {
     window.location.href = "index.html#seccionAbout";
 });
