@@ -562,7 +562,6 @@ b {
 
 .contact-link i {
     color: #0C1F3D;
-    /* Color del ícono */
     font-size: 1.5rem;
     margin-right: 10px;
 }
@@ -577,3 +576,4 @@ b {
         opacity: 1;
     }
 }
+

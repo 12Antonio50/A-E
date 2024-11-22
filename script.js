@@ -1,41 +1,43 @@
+document.addEventListener("DOMContentLoaded", function () {
 
-function cambiarNavBackground() {
-    const navbars = document.querySelectorAll('.custom-nav, .custom-nav-about');
+    function cambiarNavBackground() {
+        const navbars = document.querySelectorAll('.custom-nav, .custom-nav-about');
 
-    navbars.forEach(navbar => {
-        if (window.scrollY > 1) {
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-        }
-    });
-}
-
-window.addEventListener('scroll', cambiarNavBackground);
-
-
-const btnScroll = document.getElementById("btn-scroll");
-
-btnScroll.onclick = function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-};
-
-window.onload = function () {
-    const textInfo = document.getElementById("text-inf").style.opacity = "1";
-    if (textInfo === "1") {
-        document.getElementById("p-inf");
+        navbars.forEach(navbar => {
+            if (window.scrollY > 1) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
     }
-};
 
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
+    window.addEventListener('scroll', cambiarNavBackground);
 
-function openModal() {
-    myModal.addEventListener('shown.bs.modal', function () {
-        myInput.focus()
-    })
-}
+    const btnScroll = document.getElementById("btn-scroll");
+    if (btnScroll) {
+        btnScroll.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    }
 
-document.getElementById("seccionAbout").addEventListener("click", function () {
-    window.location.href = "index.html#seccionAbout";
+    const textInfo = document.getElementById("text-inf");
+    if (textInfo) {
+        textInfo.style.opacity = "1";
+    }
+
+    const seccionAbout = document.getElementById("seccionAbout");
+    if (seccionAbout) {
+        seccionAbout.addEventListener("click", function () {
+            window.location.href = "index.html#seccionAbout";
+        });
+    }
+
+    const myModal = document.getElementById('myModal');
+    const myInput = document.getElementById('myInput');
+    if (myModal && myInput) {
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus();
+        });
+    }
 });
