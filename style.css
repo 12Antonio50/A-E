@@ -447,9 +447,7 @@ b {
 }
 
 .card-carousel {
-    /*background: linear-gradient(135deg, #1E3B66, #0C1F3D, #08142C, #1E3B66);*/
-    background: #0C1F3D;
-    border: none;
+    background: linear-gradient(135deg, #1E3B66, #0C1F3D, #08142C, #1E3B66);   
     height: 20rem;
 }
 
